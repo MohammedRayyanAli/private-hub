@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Page</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Private Hub - Note</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1 id="pageTitle"></h1>
-    <a id="backToTopic" href="#">⬅ Back to Topic</a>
-  </header>
-  <main>
+<header>
+  <h1 id="pageTitle"></h1>
+  <nav class="breadcrumb">
+    <a id="backToTopic" href="#">⬅ Back to Topic</a> |
+    <a href="index.html">Home</a>
+  </nav>
+</header>
+<main>
+  <section class="section">
     <textarea id="pageContent" placeholder="Write your notes here..."></textarea>
-    <button onclick="savePageContent()">Save</button>
-  </main>
-
-  <script src="script.js"></script>
-  <script>loadPageContent();</script>
+    <button id="saveBtn" onclick="savePageContent()">Save</button>
+    <div id="saveAlert" class="alert hidden">Saved!</div>
+  </section>
+</main>
+<script src="script.js"></script>
+<script>loadPageContent();</script>
 </body>
 </html>
