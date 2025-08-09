@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Topic</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Private Hub - Pages</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1 id="topicTitle"></h1>
-    <a href="index.html">⬅ Back to Topics</a>
-  </header>
-  <main>
+<header>
+  <h1 id="topicTitle"></h1>
+  <a href="index.html" class="back-link">⬅ Back to Topics</a>
+</header>
+<main>
+  <section class="section">
     <h2>Pages</h2>
-    <ul id="pageList"></ul>
-    <input type="text" id="newPage" placeholder="New page name" />
-    <button onclick="addPage()">Add Page</button>
-  </main>
+    <ul id="pageList" class="card-list"></ul>
 
-  <script src="script.js"></script>
-  <script>loadPages();</script>
+    <div class="input-group">
+      <input type="text" id="newPage" placeholder="Add new page..." autocomplete="off" />
+      <button onclick="addPage()" aria-label="Add Page">Add</button>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+<script>loadPages();</script>
 </body>
 </html>
