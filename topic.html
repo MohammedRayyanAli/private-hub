@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Topic</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="topicTitle"></h1>
+    <a href="index.html">⬅ Back to Topics</a>
+  </header>
+  <main>
+    <h2>Pages</h2>
+    <ul id="pageList"></ul>
+    <input type="text" id="newPage" placeholder="New page name" />
+    <button onclick="addPage()">Add Page</button>
+  </main>
+
+  <script src="script.js"></script>
+  <script>loadPages();</script>
+</body>
+</html>
