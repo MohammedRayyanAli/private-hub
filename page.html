@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="pageTitle"></h1>
+    <a id="backToTopic" href="#">⬅ Back to Topic</a>
+  </header>
+  <main>
+    <textarea id="pageContent" placeholder="Write your notes here..."></textarea>
+    <button onclick="savePageContent()">Save</button>
+  </main>
+
+  <script src="script.js"></script>
+  <script>loadPageContent();</script>
+</body>
+</html>
